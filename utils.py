@@ -1,6 +1,7 @@
 '''Functions for drawing contours of Dirichlet distributions.'''
 
 # Author: Thomas Boggs
+# Adapted for Devfest
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -99,7 +100,7 @@ def add_legend(ax):
 
 def display_probs(d):
     for key, value in d.items():
-        print(f'Species: {key:8} Prevalence: {100*value:.2f}%.')
+        print(f'Rating: {key:8} Prevalence: {100*value:.2f}%.')
 # if __name__ == '__main__':
 #     f = plt.figure(figsize=(8, 6))
 #     alphas = [[0.999] * 3,
