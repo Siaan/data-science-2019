@@ -86,15 +86,15 @@ def plot_points(X, barycentric=True, border=True, **kwargs):
 
 def annotate_plot():
     cs = ['#008fd5', '#fc4f30', '#e5ae38']
-    animals = ['lions', 'tigers', 'bears']
+    ratings = ['5', '4','3', '2','1']
     for i, (xy, s) in enumerate(zip([(-0.15, 0.075), (0.38, 0.868), (0.98, 0.075)],
-                         animals)):
+                         ratings)):
         plt.annotate(s, xy, color = cs[i], size = 20)
 
 def add_legend(ax):
     """Function to add legend to plots"""
-    animals = ['lions', 'tigers', 'bears']
-    for l, a in zip(ax.get_lines()[:3], animals):
+    ratings = ['5','4', '3', '2','1']
+    for l, a in zip(ax.get_lines()[:5], ratings):
         ax.plot(0, 0, label = a, c = l.get_color())
     ax.legend()
 
