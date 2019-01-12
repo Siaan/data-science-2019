@@ -1,3 +1,3 @@
-# data-science-2019
+# Data Science Track @ Devfest 2019
 
 Written for the Data Science Track at Devfest 2019!
